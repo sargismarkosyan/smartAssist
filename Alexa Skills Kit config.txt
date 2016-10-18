@@ -1,0 +1,69 @@
+# Intent Schema:
+
+{
+  "intents": [
+    {
+      "intent": "Alexa",
+      "slots": [
+        
+        {
+          "name": "String",
+          "type": "AMAZON.LITERAL"
+        },
+        {
+          "name": "Actions",
+          "type": "LIST_OF_ACTIONS"
+        },
+        {
+          "name": "Spec",
+          "type": "LIST_OF_SPEC"
+        },
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "Time",
+          "type": "AMAZON.TIME"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    }
+  ]
+}
+
+
+
+
+
+
+# Sample Utterances:
+
+Alexa {Spec}
+Alexa {Date}
+Alexa {Date} {Time}
+Alexa {Date} on {Time}
+Alexa {Date} at {Time}
+Alexa my name is {slot value|String}
+Alexa my email is {slot value|String}
+Alexa {Actions}
+Alexa {Actions} appointment
+Alexa {Actions} an appointment
+
